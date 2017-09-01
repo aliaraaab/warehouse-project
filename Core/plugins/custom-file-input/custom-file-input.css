@@ -1,0 +1,235 @@
+.custominputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.custominputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.custominputfile:focus + label,
+.custominputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.custominputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.custominputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.custominputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+.custominputfile-1:focus + label,
+.custominputfile-1.has-focus + label,
+.custominputfile-1 + label:hover {
+    background-color: #722040;
+}
+
+
+/* style 2 */
+
+.custominputfile-2 + label {
+    color: #d3394c;
+    border: 2px solid currentColor;
+}
+
+.custominputfile-2:focus + label,
+.custominputfile-2.has-focus + label,
+.custominputfile-2 + label:hover {
+    color: #722040;
+}
+
+
+/* style 3 */
+
+.custominputfile-3 + label {
+    color: #d3394c;
+}
+
+.custominputfile-3:focus + label,
+.custominputfile-3.has-focus + label,
+.custominputfile-3 + label:hover {
+    color: #722040;
+}
+
+
+/* style 4 */
+
+.custominputfile-4 + label {
+    color: #d3394c;
+}
+
+.custominputfile-4:focus + label,
+.custominputfile-4.has-focus + label,
+.custominputfile-4 + label:hover {
+    color: #722040;
+}
+
+.custominputfile-4 + label figure {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d3394c;
+    display: block;
+    padding: 20px;
+    margin: 0 auto 10px;
+}
+
+.custominputfile-4:focus + label figure,
+.custominputfile-4.has-focus + label figure,
+.custominputfile-4 + label:hover figure {
+    background-color: #722040;
+}
+
+.custominputfile-4 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+
+
+/* style 5 */
+
+.custominputfile-5 + label {
+    color: #d3394c;
+}
+
+.custominputfile-5:focus + label,
+.custominputfile-5.has-focus + label,
+.custominputfile-5 + label:hover {
+    color: #722040;
+}
+
+.custominputfile-5 + label figure {
+    width: 100px;
+    height: 135px;
+    background-color: #d3394c;
+    display: block;
+    position: relative;
+    padding: 30px;
+    margin: 0 auto 10px;
+}
+
+.custominputfile-5:focus + label figure,
+.custominputfile-5.has-focus + label figure,
+.custominputfile-5 + label:hover figure {
+    background-color: #722040;
+}
+
+.custominputfile-5 + label figure::before,
+.custominputfile-5 + label figure::after {
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.custominputfile-5 + label figure::before {
+    border-top: 20px solid #dfc8ca;
+    border-left: 20px solid transparent;
+}
+
+.custominputfile-5 + label figure::after {
+    border-bottom: 20px solid #722040;
+    border-right: 20px solid transparent;
+}
+
+.custominputfile-5:focus + label figure::after,
+.custominputfile-5.has-focus + label figure::after,
+.custominputfile-5 + label:hover figure::after {
+    border-bottom-color: #d3394c;
+}
+
+.custominputfile-5 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+
+
+/* style 6 */
+
+.custominputfile-6 + label {
+    color: #d3394c;
+}
+
+.custominputfile-6 + label {
+    border: 1px solid #d3394c;
+    background-color: #f1e5e6;
+    padding: 0;
+}
+
+.custominputfile-6:focus + label,
+.custominputfile-6.has-focus + label,
+.custominputfile-6 + label:hover {
+    border-color: #722040;
+}
+
+.custominputfile-6 + label span,
+.custominputfile-6 + label strong {
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.custominputfile-6 + label span {
+    width: 200px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.custominputfile-6 + label strong {
+    height: 100%;
+    color: #f1e5e6;
+    background-color: #d3394c;
+    display: inline-block;
+}
+
+.custominputfile-6:focus + label strong,
+.custominputfile-6.has-focus + label strong,
+.custominputfile-6 + label:hover strong {
+    background-color: #722040;
+}
+
+@media screen and (max-width: 50em) {
+	.custominputfile-6 + label strong {
+		display: block;
+	}
+}

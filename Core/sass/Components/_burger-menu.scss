@@ -1,0 +1,47 @@
+.toggle-down {
+	z-index: 1;
+	margin: -3px 0 0;
+	// position: absolute;
+	// top: 50%;
+	// bottom: initial;
+	// right: 16px;
+	// left: initial;
+	// transform: translate(0, -50%);
+
+	.menu-toggle-btn { 
+		cursor: pointer; 
+		display: inline-block; 
+		vertical-align: middle; 
+
+		span {
+			// background: $primary;
+			background: $text;
+			display: block; 
+			width: 30px;
+			height: 2px;
+			margin-bottom: 8px;
+			transition: all 0.3s linear;
+
+			&:last-child {
+				margin-bottom: 0; 
+			}
+		}
+	}
+
+	&.toggleDrawer {
+		.menu-toggle-btn {
+			span {
+				&:nth-child(1),
+				&:nth-child(2) {
+					margin: 0;
+					transform: translate(0px, 2px) rotate(-45deg) scalex(1);
+					-webkit-transform: translate(0px, 2px) rotate(-45deg) scalex(1);
+				}
+				&:nth-child(2) {
+					transform: translate(0px, 0) rotate(45deg) scalex(1);
+					-webkit-transform: translate(0px, 0) rotate(45deg) scalex(1);
+				}
+			}
+		}
+	}
+}

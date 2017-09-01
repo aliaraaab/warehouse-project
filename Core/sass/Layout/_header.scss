@@ -1,0 +1,150 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: initial;
+	z-index: 3;
+	background-color: $white;
+	border-top: 1px solid $text;
+	border-bottom: 1px solid $text;
+
+	&.search-open {
+		background-color: $bg-semi-gray;
+	}
+
+	a {
+		color: $text;
+		font-family: poppins-medium;
+
+		&.button {
+			min-width: 0;
+			border-radius: 0;
+			padding: 10px 24px 8px;
+			text-transform: none;
+		}
+	}
+
+	.header-logo {
+		display: block;
+		float: left;
+	}
+
+	.brand-logo {
+		padding: 0;
+		margin: 0;
+
+		.logo {
+			display: table;
+			width: 118px;
+			height: 40px;
+			background-image: url(../img/logo.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		strong {
+			display: none;
+		}
+	}
+
+	.header-menu {
+    	padding: 20px 0;
+
+		.menu {
+			display: block;
+			float: right;
+
+			li {
+				margin: 0 24px 0 0;
+				vertical-align: middle;
+
+				&:last-child {
+					margin: 0;
+				}
+			}
+
+			a {
+				font-size: 1.2em;
+			}
+		}
+
+		.search-area {
+			position: relative;
+
+			.search-icon {
+				font-size: 1.4em;
+				cursor: pointer;
+			}
+
+			.search {
+				position: absolute;
+				z-index: 1;
+				top: 50%;
+				left: initial;
+				right: 100%;
+				bottom: initial;
+				width: 420px;
+				opacity: 0;
+				visibility: hidden;
+				pointer-events: none;
+				transform: translate(0, -50%);
+				transition: all 0.3s linear;
+
+				&.showing {
+					opacity: 1;
+					visibility: visible;
+					pointer-events: visible;
+				}
+
+				input[type="text"] {
+					width: 100%;
+					padding: 10px 16px 8px;
+					background-color: $bg-semi-gray;
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+
+	.menu-toggle {
+		background-color: $bg-semi-gray;
+		padding: 16px 0;
+		position: absolute;
+		top: 100%;
+		bottom: initial;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: all 0.3s linear;
+
+		&.showing {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: visible;
+		}
+
+		.menu {
+			padding: 0;
+			text-align: right;
+			float: right;
+
+			li {
+				margin: 0 24px 0 0;
+				display: block;
+				float: left;
+
+				&:last-child {
+					margin: 0;
+				}
+			}
+
+			a {
+				font-size: 1.2em;
+			}
+		}
+	}
+}

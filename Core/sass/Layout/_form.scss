@@ -1,0 +1,189 @@
+.form-area {
+	&.contact-area {
+		text-align: center;
+		padding: 24px 16px;
+		background-color: $secondary;
+		border-radius: 20px;
+
+		@include breakpoint(tablet) {
+			padding: 2rem;
+		    margin-top: -80px;
+		}
+		
+		@include breakpoint(wide) {
+			padding: 3rem;
+		}
+	}
+
+	.title-area {
+		margin: 0 0 24px;
+		color: $white;
+		
+		@include breakpoint(wide) {
+			padding: 0 50px;
+		}
+
+		h5 {
+			font-size: 1.3em;
+			line-height: 150%;
+			margin: 0 0 16px;
+			font-family: poppins-regular;
+			
+			@include breakpoint(tablet) {
+				font-size: 1.4em;
+			}
+		}
+
+		p {
+			margin: 0;
+			line-height: 150%;
+			font-size: 0.9em;
+		}
+	}
+
+	.form-group {
+		position: relative;
+
+		.form-control {
+			outline: 0;
+			box-shadow: none;
+			border: 0;
+			padding: 11px 10px 10px;
+			height: auto;
+			color: $text;
+			font-size: 16px;
+		    line-height: 150%;
+			border-radius: 10px;
+
+			@include breakpoint(tablet) {
+				padding: 10px 20px 9px;
+			}
+
+			&:focus {
+				border-color: $tosca;
+			}
+		}
+
+		::-webkit-input-placeholder {
+			color: $text;
+		}
+
+		:-moz-placeholder {
+			color: $text;
+		}
+
+		::-moz-placeholder {
+			color: $text;
+		}
+
+		:-ms-input-placeholder {  
+			color: $text;
+		}
+
+		label {
+			text-transform: uppercase;
+			letter-spacing: 0.5pt;
+			line-height: 130%;
+			display: inline-block;
+			position: relative;
+			font-size: 0.9em;
+			color: $text-darker;
+			font-family: poppins-regular;
+		}
+
+		textarea {
+			&.form-control {
+				resize: none;
+				height: 120px;
+			}
+		}
+
+		.datepicker {
+			cursor: pointer;
+		}
+
+		.icon-down {
+			position: absolute;
+			top: 50%;
+			bottom: initial;
+			left: initial;
+			right: 15px;
+			font-size: 1.6em;
+			pointer-events: none;
+			transform: translate(0,-50%);
+			
+			@include breakpoint(tablet) {
+				right: 20px;
+			}
+		}
+
+		.col-xs-6 {
+			padding: 0 8px 0 0;
+
+			&:last-child {
+				padding: 0 0 0 8px;
+			}
+		}
+
+		.input-text {
+			position: relative;
+		}
+
+		.help-block {
+			color: $red;
+			margin: 0;
+			font-weight: normal;
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			bottom: initial;
+			left: initial;
+			font-size: 1em;
+			letter-spacing: 0.5pt;
+    		transform: translate(0,-50%);
+		}
+
+		&.has-error {
+			.form-control {
+				border-color: $red;
+				padding-right: 40px;
+			}
+
+			::-webkit-input-placeholder {
+				color: $red;
+			}
+
+			:-moz-placeholder {
+				color: $red;
+			}
+
+			::-moz-placeholder {
+				color: $red;
+			}
+
+			:-ms-input-placeholder {  
+				color: $red;
+			}
+
+			.icon-down {
+				color: $red;
+			}
+		}
+	}
+
+	.button-area {
+		margin: 16px 0 0;
+		
+		@include breakpoint(tablet) {
+			margin: 24px 0 0;
+		}
+
+		.button {
+			width: 100%;
+
+			@include breakpoint(tablet) {
+				width: auto;
+			}
+		}
+	}
+}

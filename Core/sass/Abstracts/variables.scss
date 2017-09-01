@@ -1,0 +1,90 @@
+// FONT FAMILY
+$font_idx: 1;
+$font_default: Helvetica, Arial, sans-serif !default;
+
+// Font Family Ex. (name, 'fonts/path')
+$font_family: (
+    poppins-bold: 'fonts/poppins/poppins-bold',
+    poppins-light: 'fonts/poppins/poppins-light',
+    poppins-medium: 'fonts/poppins/poppins-medium',
+    poppins-regular: 'fonts/poppins/poppins-regular',
+    poppins-semibold: 'fonts/poppins/poppins-semibold',
+); 
+
+// BUTTONS
+// Default Button Ex. (button-class, background-code, font-color)
+$buttons:
+    ('btn-red', #D9534F, #FFFFFF),
+    ('btn-blue', #337AB7, #FFFFFF),
+    ('btn-green', #5CB85C, #FFFFFF);
+
+// text-align
+$align: left center right;
+
+// vertical-align
+$vertical-align: top middle bottom;
+
+// float
+$float: left right;
+
+// position
+$position: top right bottom left;
+
+// media-query
+$media-query:
+    (laptop, (min-width: 1366px)),
+    (desktop, (min-width: 1200px)),
+    (wide, (min-width: 992px)),
+    (tablet, (min-width: 768px)),
+    (mobile, (max-width: 767px)),
+    (small-mobile, (max-width: 360px));
+
+
+// Default color
+// $primary: #084b71;
+$primary: #a9a7a8;
+$secondary: #1c99d5;
+// $secondary: #ef3d01;
+$text: #5e5e5e;
+$text-lighter: #cccccc;
+$text-darkgray: #6b6c6e;
+$text-darker: #010101;
+$white: #FFFFFF;
+$black: #000000;
+$border-gray: #e0e0e0;
+
+$bg-default: #f0f6fc;
+$bg-gray: #e6e6e6;
+$border-soft-gray: #c9c6c6;
+$bg-soft-blue: #f0f6fc;
+$bg-semi-gray: #f1f1f3;
+$bg-gray: #e5e6e8;
+$bg-dark-gray: #a9a7a8;
+$dark-black: #404040;
+
+
+$blue: #1946ba;
+$soft-blue: #1ba0e2;
+$red: #e31d1a;
+$green: #1b913f;
+$orange: #f3ad28;
+$tosca: #16a494;
+$cyan: #0d92c9;
+$yellow: #ffc20f;
+$brown: #a62d27;
+$transparent: transparent;
+
+$facebook: #5d82d1;
+$twitter: #40bff5;
+$gplus: #d95946;
+$pinterest: #bd081c;
+
+$bg-semigray: #e7e7e7;
+
+$red-orange: #ee4138;
+$white-smoke: #f3f3f3;
+// $bg-dark-gray: #616163;
+$bg-semi-gray: #ebebeb;
+$light-gray: #efefef;
+$light-black: #4b4b4b;
+
