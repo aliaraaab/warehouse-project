@@ -96,21 +96,21 @@ input[type='button'].btn {
     color: $white;
     background-color: $primary;
     // background-color: $bg-dark-gray;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-align: center;
     padding: 12px 20px 10px;
     line-height: 120%;
     display: inline-block;
-    width: 100%;
-    min-width: 160px;
+    // width: 100%;
+    // min-width: 160px;
     font-size: 16px;
-    font-family: poppins-medium;
-    border-radius: 10px;
+    // font-family: poppins-medium;
+    border-radius: 20px;
     transition: all 0.3s linear;
+    width: auto;
 
     @include breakpoint(tablet) {
-        width: auto;
-        min-width: 236px;
+        // min-width: 236px;
         font-size: 1.2em;
     }
 

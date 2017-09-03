@@ -8,6 +8,7 @@ header {
 	background-color: $white;
 	border-top: 1px solid $text;
 	border-bottom: 1px solid $text;
+	transition: all 0.3s linear;
 
 	&.search-open {
 		background-color: $bg-semi-gray;

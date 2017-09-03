@@ -41,23 +41,25 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		
-		// @include breakpoint(wide) {
-		// 	bottom: 3%;
-		// }
+		z-index: 3;
 
 		li {
 			width: auto;
 			height: auto;
+			margin: 0 auto 16px;
+			display: table;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 
 			button {
-				background-color: $primary;
-				width: 10px;
-				height: 10px;
-				padding: 0;
-				display: table;
+				width: 8px;
+				height: 8px;
 				border-radius: 100%;
-				// box-shadow: 0 1px 15px rgba(54,54,54,0.8);
+				background-color: transparent;
+				border: 1px solid $border-gray;
+				padding: 0;
 
 				&:before {
 					display: none;
@@ -66,7 +68,7 @@
 
 			&.slick-active {
 				button {
-					background-color: $secondary;
+					background-color: $border-gray;
 				}
 			}
 		}
@@ -81,26 +83,11 @@
 
 .hero-banner {
 	.slick-dots {
-		bottom: 4%;
-		
-		@include breakpoint(wide) {
-			bottom: 3%;
-		}
-
-		li {
-			button {
-				width: 40px;
-				height: 2px;
-				border-radius: 0;
-				background-color: rgba(0, 0, 0, 0.2);
-				box-shadow: 0 1px 15px rgba(54,54,54,0.8);
-			}
-
-			&.slick-active {
-				button {
-					background-color: $white;
-				}
-			}
-		}
+		display: block;
+		width: 20px;
+		left: initial;
+		right: 8%;
+		top: 10%;
+		bottom: initial;
 	}
 }

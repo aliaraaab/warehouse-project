@@ -1,13 +1,62 @@
 .hero-banner {
 	padding: 0;
+	position: relative;
+
+	.scroll-down {
+		position: absolute;
+		top: initial;
+		bottom: 10px;
+		left: 50%;
+		right: initial;
+		display: inline-block;
+		font-size: 1.1em;
+		padding: 10px;
+		color: $text;
+		z-index: 2;
+		transform: translate(-50%, 0);
+
+		&:hover {
+			color: $secondary;
+		}
+
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		i {
+			font-size: 1.6em;
+			vertical-align: middle;
+			margin: 0 0 0 5px;
+		}
+	}
+
+	.wrapper {
+		padding: 60px 0;
+		// position: absolute;
+		// top: initial;
+		// left: 16px;
+		// right: 16px;
+		// bottom: 10%;
+		// z-index: 1;
+	}
 
 	.slider-banner {
 		position: relative;
 		height: 0;
-		padding: 0 0 45%;
+		// padding: 0 0 45%;
+		padding: 0 0 9.38%;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+
+		.container {
+			position: absolute;
+			top: initial;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
 		
 		.overlay {
 			position: absolute;
@@ -20,19 +69,7 @@
 			pointer-events: none;
 		}
 
-		.wrapper {
-			padding: 60px 0;
-			// position: absolute;
-			// top: initial;
-			// left: 16px;
-			// right: 16px;
-			// bottom: 10%;
-			// z-index: 1;
-		}
-
 		.desc-info {
-			
-
 			h3 {
 				margin: 0;
 				line-height: 140%;

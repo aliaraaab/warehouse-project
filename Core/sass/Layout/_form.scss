@@ -48,16 +48,14 @@
 			outline: 0;
 			box-shadow: none;
 			border: 0;
-			padding: 11px 10px 10px;
+			padding: 10px 16px 9px;
 			height: auto;
 			color: $text;
-			font-size: 16px;
+			font-size: 1em;
 		    line-height: 150%;
-			border-radius: 10px;
-
-			@include breakpoint(tablet) {
-				padding: 10px 20px 9px;
-			}
+			border-radius: 0;
+			border: 1px solid $border-gray;
+			// border-radius: 10px;
 
 			&:focus {
 				border-color: $tosca;
@@ -107,14 +105,10 @@
 			top: 50%;
 			bottom: initial;
 			left: initial;
-			right: 15px;
+			right: 16px;
 			font-size: 1.6em;
 			pointer-events: none;
 			transform: translate(0,-50%);
-			
-			@include breakpoint(tablet) {
-				right: 20px;
-			}
 		}
 
 		.col-xs-6 {
@@ -127,6 +121,10 @@
 
 		.input-text {
 			position: relative;
+
+			.form-control {
+				padding: 10px 38px 9px 16px;
+			}
 		}
 
 		.help-block {
