@@ -91,6 +91,13 @@ gulp.task('clean-sass', function (file) {
         ], {read: false})
     .pipe(clean({force: true}));
 });
+gulp.task('clean-sass_insan', function (file) {
+  return gulp.src([
+        path.join(__dirname, targetPath + '/assets/css/main-insan.css'), 
+        path.join(__dirname, targetPath + '/assets/css/maps/main-insan.css.map'), 
+        ], {read: false})
+    .pipe(clean({force: true}));
+});
 gulp.task('clean-pages', function () {
   return gulp.src([
         path.join(__dirname, targetPath + '/assets/css/*pages*/*.css'),
@@ -144,6 +151,25 @@ gulp.task('html', function() {
 
 // copy the sass file task
 gulp.task('sass', ['clean-sass'], function() {
+    return gulp.src(paths.sass)
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+          outputStyle: 'compressed',
+          includePaths: bourbon.includePaths
+        }).on('error', sass.logError))
+        .pipe(postcss([autoprefixer({ browsers: ['> 0%'] })]))       
+        //.pipe(uglifycss())
+        .pipe(sourcemaps.write(path.join(__dirname, targetPath + '/assets/css/maps'), {
+            includeContent: false, 
+            sourceRoot: path.join(__dirname, targetPath + '/assets/css/maps'),
+            sourceMappingURL: function(file) {
+                return 'maps/' + file.relative + '.map';
+            }
+        }))
+        .pipe(gulp.dest(path.join(__dirname, targetPath + '/assets/css/')))
+        .pipe(browserSync.stream())
+});
+gulp.task('sass', ['clean-sass_insan'], function() {
     return gulp.src(paths.sass)
         .pipe(sourcemaps.init())
         .pipe(sass({
