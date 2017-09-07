@@ -1,0 +1,44 @@
+.cards {
+	[class*="col-md-"] {
+		padding: 0 10px;
+		margin: 10px 0;
+	}
+
+	.cards-content {
+		background-color: $bg-gray;
+		padding: 20px;
+	    text-align: center;
+
+	    h4 {
+			margin: 0 0 10px;
+			font-size: 2.8em;
+			font-family: 'poppins-bold';
+	    }
+
+	    h6 {
+			margin: 0 0 10px;
+			font-size: 1em;
+			color: $primary;
+	    }
+
+	    .location {
+			margin: 0;
+			text-transform: uppercase;
+			letter-spacing: 0;
+			font-size: 1.3em;
+
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				line-height: 100%;
+				margin: 5px 0 0;
+			}
+
+			i {
+				vertical-align: middle;
+			    margin: 0 5px 0 0;
+			    font-size: 1.3em;
+			}
+	    }
+	}
+}

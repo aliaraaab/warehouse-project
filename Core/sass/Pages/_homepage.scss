@@ -205,8 +205,54 @@
 	}
 
 	.button-area {
+		margin: 0;
+
 		.button {
 			padding: 12px 24px 10px;
+		}
+	}
+}
+
+.partners {
+	.title-area {
+		text-align: center;
+		margin: 0 0 32px;
+
+		h4 {
+			font-size: 1.8em;
+			line-height: 140%;
+			margin: 0;
+		}
+	}
+
+	.partners-list {
+		display: block;
+		text-align: center;
+
+		.partners-content {
+			display: inline-block;
+			vertical-align: top;
+			margin: 10px 20px;
+		}
+
+		.image-area {
+			margin: 0 0 10px;
+
+			.image {
+				display: inline-block;
+				width: 120px;
+				height: 65px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+
+		.name-area {
+			h6 {
+				font-size: 1em;
+				margin: 0;
+			}
 		}
 	}
 }

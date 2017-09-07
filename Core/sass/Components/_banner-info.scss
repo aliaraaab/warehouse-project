@@ -1,0 +1,39 @@
+.banner-info {
+	&.has-button {
+		.wrapper {
+	    	padding: 0 225px 0 0;
+		}
+	}
+
+	.wrapper {
+		position: relative;
+	}
+
+	.box {
+		padding: 40px;
+		background-color: $bg-semi-gray;
+	}
+
+	.info-area {
+		h4 {
+			margin: 0 0 10px;
+			font-size: 2.2em;
+			font-family: 'poppins-bold';
+		}
+
+		h6 {
+			font-size: 1.2em;
+			margin: 0;
+			line-height: 150%;
+		}
+	}
+
+	.button {
+		position: absolute;
+		top: 50%;
+		left: initial;
+		right: 0;
+		bottom: initial;
+		transform: translate(0, -50%);
+	}
+}
