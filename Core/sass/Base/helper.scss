@@ -73,7 +73,7 @@ $offset: 20;
 
 .row {
 
-    @include breakpoint(desktop) {
+    @include breakpoint(wide) {
 
         &.row-inline {
             font-size: 0px;
