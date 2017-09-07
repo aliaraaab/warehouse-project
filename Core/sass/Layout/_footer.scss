@@ -1,0 +1,12 @@
+footer {
+	border-top: solid 2px $border-soft-gray;
+
+	.foot-top {
+		padding: 40px 0;
+	}
+
+	.foot-bottom {
+		padding: 24px 0;
+		border-top: solid 1px $border-soft-gray;
+	}
+}
