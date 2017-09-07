@@ -8,6 +8,7 @@
 		background-color: $bg-gray;
 		padding: 20px;
 	    text-align: center;
+	    position: relative;
 
 	    h4 {
 			margin: 0 0 10px;
@@ -39,6 +40,15 @@
 			    margin: 0 5px 0 0;
 			    font-size: 1.3em;
 			}
+	    }
+
+	    .overlay-click {
+	    	position: absolute;
+	    	top: 0;
+	    	left: 0;
+	    	right: 0;
+	    	bottom: 0;
+	    	z-index: 1;
 	    }
 	}
 }
