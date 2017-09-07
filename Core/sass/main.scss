@@ -23,6 +23,7 @@
     'Components/hero-banner',
     'Components/cards',
     'Components/banner-info',
+    'Components/modal',
     'Components/tag';
 
 /* LAYOUT */
@@ -34,4 +35,5 @@
 
 /* PAGES */
 @import
-    'pages/homepage';
+    'pages/homepage',
+    'pages/signup';

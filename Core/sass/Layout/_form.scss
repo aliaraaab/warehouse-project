@@ -1,20 +1,4 @@
 .form-area {
-	&.contact-area {
-		text-align: center;
-		padding: 24px 16px;
-		background-color: $secondary;
-		border-radius: 20px;
-
-		@include breakpoint(tablet) {
-			padding: 2rem;
-		    margin-top: -80px;
-		}
-		
-		@include breakpoint(wide) {
-			padding: 3rem;
-		}
-	}
-
 	.title-area {
 		margin: 0 0 24px;
 		color: $white;
@@ -79,14 +63,13 @@
 		}
 
 		label {
-			text-transform: uppercase;
-			letter-spacing: 0.5pt;
 			line-height: 130%;
 			display: inline-block;
 			position: relative;
-			font-size: 0.9em;
-			color: $text-darker;
-			font-family: poppins-regular;
+			font-family: 'poppins-light';
+			font-size: 1.2em;
+			color: $text;
+		    // color: $text-darkgray;
 		}
 
 		textarea {
@@ -166,6 +149,21 @@
 			.icon-down {
 				color: $red;
 			}
+		}
+	}
+
+	.checkbox {
+		label {
+			padding-left: 25px;
+			line-height: 150%;
+		}
+
+		.jcf-checkbox {
+			position: absolute;
+			top: 2px;
+			left: 0;
+			bottom: initial;
+			right: initial;
 		}
 	}
 
