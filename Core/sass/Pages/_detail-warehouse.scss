@@ -31,21 +31,25 @@
 
 		.detail-warehouse-caption {
 			font-size: 1.1em;
-			line-height: 2.2em;
+			line-height: 2em;
 			h1 {
 				margin-top: 0;
 				color: $black;
-				font-weight: bold;
+				font-family: 'poppins-bold';
+			}
+			strong {
+				font-weight: normal;
+				font-family: 'poppins-bold';
 			}
 			address {
-				line-height: 2.2em;
+				line-height: 2em;
 			}
 			.type-warehouse {
-				font-weight: bold;
+				font-family: 'poppins-bold';
 			}
 			.status-warehouse {
 				a {
-					font-weight: bold;
+					font-family: 'poppins-bold';
 					color: $black;
 				}
 			}
@@ -61,10 +65,104 @@
 
 	.detail-warehouse-filter {
 		.well {
+			box-shadow: none;
+			border-radius: 0;
 			img {
 				display: inline-block;
 				vertical-align: middle;
 				margin-right: 8px;
+			}
+		}
+		h2 {
+			font-weight: bold;
+			position: relative;
+			img {
+				display: inline-block;
+			    vertical-align: sub;
+			}
+			span {
+				font-size: 10px;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+				background-color: $bg-dark-gray;
+				color: $white;
+				display: block;
+				padding-right: 12px;
+				height: 32px;
+				line-height: 32px;
+				&:before {
+					content: '';
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 16px 24px 16px 0;
+					border-color: transparent $bg-dark-gray transparent transparent;
+					position: absolute;
+					left: -24px;
+					top: 0;
+				}
+			}
+		}
+		.form-filter {
+			position: relative;
+			width: 100%;
+			border: solid 1px $border-soft-gray;
+			margin: 15px 0;
+			.form-group {
+				display: block;
+				float: left;
+				width: 25%;
+				border-right: solid 1px $border-soft-gray;
+				margin-bottom: 0;
+				padding: 15px;
+				&:last-child {
+					border-right: none;
+				}
+				input {
+					border-radius: 0;
+					box-shadow: none;
+					border: none;
+					border-bottom: solid 1px $border-gray;
+				}
+				button {
+					display: block;
+					text-align: center;
+					padding: 15px;
+					background-color: $bg-dark-gray;
+					color: $white;
+					margin: 0 auto;
+				}
+			}
+		}
+		.sub-filter {
+			position: relative;
+			input {
+				width: 300px;
+				border-radius: 32px;
+				+ .fa {
+					position: absolute;
+					top: 10px;
+				    left: 290px;
+				}
+			}
+			.jcf-select {
+				width: 120px;
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 12px;
+				padding: 4px 32px 4px 16px;;
+			}
+			button {
+				display: inline-block;
+			    padding: 4px 24px;
+			    border: solid 1px $border-gray;
+			    border-radius: 24px;
+			    margin-left: 8px;
+			    .fa {
+			    	margin-left: 12px;
+			    }
 			}
 		}
 	}
