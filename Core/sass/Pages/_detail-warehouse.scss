@@ -1,0 +1,61 @@
+.detail-warehouse {
+	.banner-detail-warehouse {
+		background-color: $bg-gray;
+		padding: 40px 0;
+
+		.detail-warehouse-slider {
+			position: relative;
+			+ .detail-warehouse-slider-thumb {
+				position: absolute;
+				left: 35px;
+				bottom: 20px;
+				img {
+					margin: 0 2px;
+					border: solid 1px $border-gray;
+					cursor: pointer;
+					opacity: .5;
+					&.slick-current {
+						opacity: 1;
+					}
+				}
+				+ .detail-warehouse-slider-cta {
+					position: absolute;
+					top: 20px;
+					right: 35px;
+					a {
+						margin-left: 8px;
+					}
+				}
+			}
+		}
+
+		.detail-warehouse-caption {
+			font-size: 1.1em;
+			line-height: 2.2em;
+			h1 {
+				margin-top: 0;
+				color: $black;
+				font-weight: bold;
+			}
+			address {
+				line-height: 2.2em;
+			}
+			.type-warehouse {
+				font-weight: bold;
+			}
+			.status-warehouse {
+				a {
+					font-weight: bold;
+					color: $black;
+				}
+			}
+			.job-transaction-warehouse {
+				display: block;
+				padding: 12px;
+				background-color: $white;
+				border: solid 1px $border-soft-gray;
+				line-height: 1.42857;
+			}
+		}
+	}
+}
