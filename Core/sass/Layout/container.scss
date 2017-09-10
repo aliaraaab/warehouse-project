@@ -199,13 +199,21 @@ section {
 	display: inline-block;
 	position: absolute;
 	top: 10px;
+	left: 10px;
+	right: initial;
 	bottom: initial;
 	font-size: 0.8em;
-	padding: 4px 8px;
+	padding: 0 8px;
 	text-transform: uppercase;
 	letter-spacing: 0.5pt;
-	font-family: poppins-regular;
-	box-shadow: 0 1px 10px rgba(54,54,54,0.5);
+	font-weight: normal;
+	width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 100%;
+    background-color: $primary;
+	// font-family: poppins-regular;
+	// box-shadow: 0 1px 10px rgba(54,54,54,0.5);
 
 	&.discount {
 		left: initial;

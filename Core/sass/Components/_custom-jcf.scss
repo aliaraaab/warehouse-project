@@ -6,7 +6,7 @@
 	// background-color: #f4f4f4;
 	text-align: left;
     border: 0;
-    padding: 10px 32px 9px 16px;
+    padding: 8px 32px 7px 16px;
     height: auto;
     color: $text;
     font-size: 14px;
@@ -62,10 +62,12 @@
 		    background-color: #f4f4f4;
 
 			.jcf-option {
-				font-size: 1.2em;
+				font-size: 1.1em;
 				height: auto;
 				padding: 11px 20px 10px;
 				color: $text-darkgray;
+				white-space: normal;
+				line-height: 130%;
 			}
 
 			.jcf-hover {
@@ -107,3 +109,19 @@ body>.jcf-select-drop {
 		border-width: 0px 0px 1px 1px;
 	}
 }
+
+.jcf-radio {
+	position: absolute;
+    top: 1px;
+    left: 0;
+    right: initial;
+    bottom: initial;
+}
+
+.radio-inline {
+	+.radio-inline, 
+	+.checkbox-inline {
+		margin-left: 20px;
+	}
+}
+

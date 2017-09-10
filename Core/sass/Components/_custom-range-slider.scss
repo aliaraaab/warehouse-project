@@ -1,0 +1,31 @@
+.slider {
+	&.slider-horizontal {
+		margin-left: 10px;
+		width: calc(100% - 20px);
+
+		.slider-tick {
+			display: none;
+		}
+
+		.slider-track-low {
+			background-color: $bg-gray;
+		}
+
+		.slider-track-high {
+			background-color: $white;
+			border: 1px solid $border-gray;
+		}
+
+		.slider-selection {
+			border: 1px solid $border-gray;
+			background: $white;
+			box-shadow: none;
+		}
+
+		.slider-handle {
+			cursor: pointer;
+			background: $primary;
+			box-shadow: none;
+		}
+	}
+}

@@ -32,14 +32,13 @@
 			outline: 0;
 			box-shadow: none;
 			border: 0;
-			padding: 10px 16px 9px;
+			padding: 8px 16px 7px;
 			height: auto;
 			color: $text;
 			font-size: 1em;
 		    line-height: 150%;
 			border-radius: 0;
 			border: 1px solid $border-gray;
-			// border-radius: 10px;
 
 			&:focus {
 				border-color: $tosca;

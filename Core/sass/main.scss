@@ -24,6 +24,7 @@
     'Components/cards',
     'Components/banner-info',
     'Components/modal',
+    'Components/custom-range-slider',
     'Components/tag';
 
 /* LAYOUT */
@@ -36,4 +37,5 @@
 /* PAGES */
 @import
     'pages/homepage',
+    'pages/catalog-page',
     'pages/signup';

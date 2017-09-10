@@ -1,0 +1,848 @@
+@@include('../Shared/header.html')
+
+<div class="catalog-page">
+	
+	<section class="search-table">
+		<div class="container">
+			<div class="table-location">
+				<div class="wrapper">
+					<form action="" class="search-location form-area">
+						<div class="input-location">
+							<h6 class="label-form">
+								Input Warehouse Location
+								<i class="fa fa-map-marker"></i>
+							</h6>
+							<div class="row">
+								<div class="list-row row-long">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>
+													From
+													<span class="fa fa-info"></span>
+												</label>
+												<div class="input-text">
+													<input type="text" class="form-control datepicker" placeholder="Check In Warehouse">
+													<i class="icon-down fa fa-angle-down"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>
+													End
+													<span class="fa fa-info"></span>
+												</label>
+												<div class="input-text">
+													<input type="text" class="form-control datepicker" placeholder="Check Out Warehouse">
+													<i class="icon-down fa fa-angle-down"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list-row row-semi-long">
+									<label>
+										Usage Duration
+										<span class="fa fa-info"></span>
+									</label>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="">
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="form-group">
+												<select name="">
+													<option value="">Hari</option>
+													<option value="">Minggu</option>
+													<option value="">Bulan</option>
+													<option value="">Tahun</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list-row row-sort">
+									<label>
+										Category
+										<span class="fa fa-info"></span>
+									</label>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<select name="">
+													<option value="">Category 1</option>
+													<option value="">Category 2</option>
+													<option value="">Category 3</option>
+													<option value="">Category 4</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="button-search">
+							<button class="button">
+								<span class="image" style="background-image: url('assets/img/dummy-img-logo2.png');"></span>
+								<span class="text">Search Warehouse</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="search-warehouse">
+		<div class="title-info">
+			<div class="container">
+				<h4>Hasil Pencarian Gudang di Jakarta, Kategori Kering</h4>
+				<h5>Menampilkan 12 Hasil dari 360 Gudang</h5>
+			</div>
+		</div>
+		<div class="result-info">
+			<div class="container">
+				<aside class="sidebar-nav">
+					<div class="wrapper">
+						<form action="" class="form-sidebar form-area">
+							<div class="form-group">
+								<label>Periode</label>
+								<div class="row">
+									<div class="col-md-7">
+										<input type="text" class="form-control" placeholder="Usage Duration">
+									</div>
+									<div class="col-md-5">
+										<select name="">
+											<option value="">Hari</option>
+											<option value="">Minggu</option>
+											<option value="">Bulan</option>
+											<option value="">Tahun</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Product Mix</label>
+								<div class="row">
+									<div class="col-md-6">
+										<span class="small-label">Pallet Position</span>
+									</div>
+									<div class="col-md-6">
+										<select name="">
+											<option value="">All Type</option>
+											<option value="">Type 1</option>
+											<option value="">Type 2</option>
+											<option value="">Type 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<span class="small-label">Pallet Position</span>
+									</div>
+									<div class="col-md-6">
+										<select name="">
+											<option value="">Rent Type</option>
+											<option value="">Type 1</option>
+											<option value="">Type 2</option>
+											<option value="">Type 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<span class="small-label">Pallet Position</span>
+									</div>
+									<div class="col-md-6">
+										<select name="">
+											<option value="">Storage Method</option>
+											<option value="">Method 1</option>
+											<option value="">Method 2</option>
+											<option value="">Method 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>HS Code</label>
+								<div class="row input-text">
+									<input type="text" class="form-control" placeholder="Code">
+								</div>
+							</div>
+							<div class="form-group">
+								<label>
+									Prize
+									<span>Per Day</span>
+								</label>
+								<div class="row input-text">
+									<input type="text" class="form-control range" data-slider-min="50000" data-slider-max="100000" data-slider-step="1" data-slider-value="50000" data-slider-range="true">
+								</div>
+								<div class="row input-text">
+									<div class="col-md-5">
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="col-md-2">
+										<span class="to">to</span>
+									</div>
+									<div class="col-md-5">
+										<input type="text" class="form-control" placeholder="">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Rating</label>
+								<div class="row input-text">
+									<input type="text" class="form-control range" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="1" data-slider-range="true" data-slider-ticks="[1, 5]" data-slider-ticks-labels='["1", "5"]'>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Criteria</label>
+								<div class="row">
+									<div class="col-md-6">
+										<span class="small-label">Pusat Logistik Berikat</span>
+									</div>
+									<div class="col-md-6">
+										<label class="radio-inline">
+											<input type="radio" name="criteriaOne" id="inlineRadio1" value="option1"> Yes
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="criteriaOne" id="inlineRadio2" value="option2"> No
+										</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<span class="small-label">Foreign Trade Zone</span>
+									</div>
+									<div class="col-md-6">
+										<label class="radio-inline">
+											<input type="radio" name="criteriaTwo" id="inlineRadio3" value="option1"> Yes
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="criteriaTwo" id="inlineRadio4" value="option2"> No
+										</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<span class="small-label">Dock Hight Doors</span>
+									</div>
+									<div class="col-md-6">
+										<label class="radio-inline">
+											<input type="radio" name="criteriaThree" id="inlineRadio5" value="option1"> Yes
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="criteriaThree" id="inlineRadio6" value="option2"> No
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Extra Service</label>
+								<div class="row">
+									<div class="col-md-6">
+										<span class="small-label">Pusat Logistik Berikat</span>
+									</div>
+									<div class="col-md-6">
+										<label class="radio-inline">
+											<input type="radio" name="criteriaFour" id="inlineRadio7" value="option1"> Yes
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="criteriaFour" id="inlineRadio8" value="option2"> No
+										</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<span class="small-label">Foreign Trade Zone</span>
+									</div>
+									<div class="col-md-6">
+										<label class="radio-inline">
+											<input type="radio" name="criteriaFive" id="inlineRadio9" value="option1"> Yes
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="criteriaFive" id="inlineRadio10" value="option2"> No
+										</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<span class="small-label">Dock Hight Doors</span>
+									</div>
+									<div class="col-md-6">
+										<label class="radio-inline">
+											<input type="radio" name="criteriaSix" id="inlineRadio11" value="option1"> Yes
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="criteriaSix" id="inlineRadio12" value="option2"> No
+										</label>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</aside>
+				<div class="result-area">
+					<div class="wrapper">
+						<div class="sort-area row">
+							<div class="sort pull-left">
+								<ul class="flat">
+									<li>
+										<span class="small-label">Sort By</span>
+									</li>
+									<li>
+										<select name="">
+											<option value="">Hari</option>
+											<option value="">Minggu</option>
+											<option value="">Bulan</option>
+											<option value="">Tahun</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+
+							<div class="show-pages pull-right">
+								<ul class="flat">
+									<li>
+										<span class="small-label">Item Perpages</span>
+									</li>
+									<li>
+										<select name="">
+											<option value="">12 Items</option>
+											<option value="">24 Items</option>
+											<option value="">36 Items</option>
+											<option value="">48 Items</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-thumbnail">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="box">
+										<div class="image-area">
+											<div class="image" style="background-image: url('assets/img/dummy-img-thumb-list.png')"></div>
+										</div>
+										<div class="thumbnail-area">
+											<div class="wrapper-thumb">
+												<ul class="flat rate">
+													<li>
+														<span class="star fa fa-star"></span>
+														<span class="star-info">
+															<strong>7.5</strong>/10
+														</span>
+													</li>
+													<li>
+														<span>
+															<strong>25 Ulasan</strong>
+														</span>
+													</li>
+												</ul>
+
+												<div class="name">
+													<h5>Name Warehouse</h5>
+												</div>
+												<div class="price">
+													<h6>
+														<small>Start from</small>
+														<strong>Rp. 123</strong>
+													</h6>
+												</div>
+												<div class="address">
+													<p>Jl. xxxx No.xxx, XXXX</p>
+												</div>
+												<ul class="nearest-location">
+													<li>25 Km from Nearest City</li>
+												</ul>
+												<ul class="compare-button flat row">
+													<li class="form-area pull-left">
+														<div class="form-group row">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Compare
+																</label>
+															</div>
+														</div>
+													</li>
+													<li class="pull-right">
+														<a href="#" class="button">Detail</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="box">
+										<div class="image-area">
+											<div class="image" style="background-image: url('assets/img/dummy-img-thumb-list.png')"></div>
+											<span class="badge">%</span>
+										</div>
+										<div class="thumbnail-area">
+											<div class="wrapper-thumb">
+												<ul class="flat rate">
+													<li>
+														<span class="star fa fa-star"></span>
+														<span class="star-info">
+															<strong>7.5</strong>/10
+														</span>
+													</li>
+													<li>
+														<span>
+															<strong>25 Ulasan</strong>
+														</span>
+													</li>
+												</ul>
+
+												<div class="name">
+													<h5>Name Warehouse</h5>
+												</div>
+												<div class="price">
+													<h6>
+														<small>Start from</small>
+														<strong>Rp. 123</strong>
+													</h6>
+												</div>
+												<div class="address">
+													<p>Jl. xxxx No.xxx, XXXX</p>
+												</div>
+												<ul class="nearest-location">
+													<li>25 Km from Nearest City</li>
+												</ul>
+												<ul class="compare-button flat row">
+													<li class="form-area pull-left">
+														<div class="form-group row">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Compare
+																</label>
+															</div>
+														</div>
+													</li>
+													<li class="pull-right">
+														<a href="#" class="button">Detail</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="box">
+										<div class="image-area">
+											<div class="image" style="background-image: url('assets/img/dummy-img-thumb-list.png')"></div>
+										</div>
+										<div class="thumbnail-area">
+											<div class="wrapper-thumb">
+												<ul class="flat rate">
+													<li>
+														<span class="star fa fa-star"></span>
+														<span class="star-info">
+															<strong>7.5</strong>/10
+														</span>
+													</li>
+													<li>
+														<span>
+															<strong>25 Ulasan</strong>
+														</span>
+													</li>
+												</ul>
+
+												<div class="name">
+													<h5>Name Warehouse</h5>
+												</div>
+												<div class="price">
+													<h6>
+														<small>Start from</small>
+														<strong>Rp. 123</strong>
+													</h6>
+												</div>
+												<div class="address">
+													<p>Jl. xxxx No.xxx, XXXX</p>
+												</div>
+												<ul class="nearest-location">
+													<li>25 Km from Nearest City</li>
+												</ul>
+												<ul class="compare-button flat row">
+													<li class="form-area pull-left">
+														<div class="form-group row">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Compare
+																</label>
+															</div>
+														</div>
+													</li>
+													<li class="pull-right">
+														<a href="#" class="button">Detail</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="box">
+										<div class="image-area">
+											<div class="image" style="background-image: url('assets/img/dummy-img-thumb-list.png')"></div>
+										</div>
+										<div class="thumbnail-area">
+											<div class="wrapper-thumb">
+												<ul class="flat rate">
+													<li>
+														<span class="star fa fa-star"></span>
+														<span class="star-info">
+															<strong>7.5</strong>/10
+														</span>
+													</li>
+													<li>
+														<span>
+															<strong>25 Ulasan</strong>
+														</span>
+													</li>
+												</ul>
+
+												<div class="name">
+													<h5>Name Warehouse</h5>
+												</div>
+												<div class="price">
+													<h6>
+														<small>Start from</small>
+														<strong>Rp. 123</strong>
+													</h6>
+												</div>
+												<div class="address">
+													<p>Jl. xxxx No.xxx, XXXX</p>
+												</div>
+												<ul class="nearest-location">
+													<li>25 Km from Nearest City</li>
+												</ul>
+												<ul class="compare-button flat row">
+													<li class="form-area pull-left">
+														<div class="form-group row">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Compare
+																</label>
+															</div>
+														</div>
+													</li>
+													<li class="pull-right">
+														<a href="#" class="button">Detail</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="box">
+										<div class="image-area">
+											<div class="image" style="background-image: url('assets/img/dummy-img-thumb-list.png')"></div>
+										</div>
+										<div class="thumbnail-area">
+											<div class="wrapper-thumb">
+												<ul class="flat rate">
+													<li>
+														<span class="star fa fa-star"></span>
+														<span class="star-info">
+															<strong>7.5</strong>/10
+														</span>
+													</li>
+													<li>
+														<span>
+															<strong>25 Ulasan</strong>
+														</span>
+													</li>
+												</ul>
+
+												<div class="name">
+													<h5>Name Warehouse</h5>
+												</div>
+												<div class="price">
+													<h6>
+														<small>Start from</small>
+														<strong>Rp. 123</strong>
+													</h6>
+												</div>
+												<div class="address">
+													<p>Jl. xxxx No.xxx, XXXX</p>
+												</div>
+												<ul class="nearest-location">
+													<li>25 Km from Nearest City</li>
+												</ul>
+												<ul class="compare-button flat row">
+													<li class="form-area pull-left">
+														<div class="form-group row">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Compare
+																</label>
+															</div>
+														</div>
+													</li>
+													<li class="pull-right">
+														<a href="#" class="button">Detail</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="box">
+										<div class="image-area">
+											<div class="image" style="background-image: url('assets/img/dummy-img-thumb-list.png')"></div>
+										</div>
+										<div class="thumbnail-area">
+											<div class="wrapper-thumb">
+												<ul class="flat rate">
+													<li>
+														<span class="star fa fa-star"></span>
+														<span class="star-info">
+															<strong>7.5</strong>/10
+														</span>
+													</li>
+													<li>
+														<span>
+															<strong>25 Ulasan</strong>
+														</span>
+													</li>
+												</ul>
+
+												<div class="name">
+													<h5>Name Warehouse</h5>
+												</div>
+												<div class="price">
+													<h6>
+														<small>Start from</small>
+														<strong>Rp. 123</strong>
+													</h6>
+												</div>
+												<div class="address">
+													<p>Jl. xxxx No.xxx, XXXX</p>
+												</div>
+												<ul class="nearest-location">
+													<li>25 Km from Nearest City</li>
+												</ul>
+												<ul class="compare-button flat row">
+													<li class="form-area pull-left">
+														<div class="form-group row">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Compare
+																</label>
+															</div>
+														</div>
+													</li>
+													<li class="pull-right">
+														<a href="#" class="button">Detail</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="box">
+										<div class="image-area">
+											<div class="image" style="background-image: url('assets/img/dummy-img-thumb-list.png')"></div>
+										</div>
+										<div class="thumbnail-area">
+											<div class="wrapper-thumb">
+												<ul class="flat rate">
+													<li>
+														<span class="star fa fa-star"></span>
+														<span class="star-info">
+															<strong>7.5</strong>/10
+														</span>
+													</li>
+													<li>
+														<span>
+															<strong>25 Ulasan</strong>
+														</span>
+													</li>
+												</ul>
+
+												<div class="name">
+													<h5>Name Warehouse</h5>
+												</div>
+												<div class="price">
+													<h6>
+														<small>Start from</small>
+														<strong>Rp. 123</strong>
+													</h6>
+												</div>
+												<div class="address">
+													<p>Jl. xxxx No.xxx, XXXX</p>
+												</div>
+												<ul class="nearest-location">
+													<li>25 Km from Nearest City</li>
+												</ul>
+												<ul class="compare-button flat row">
+													<li class="form-area pull-left">
+														<div class="form-group row">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Compare
+																</label>
+															</div>
+														</div>
+													</li>
+													<li class="pull-right">
+														<a href="#" class="button">Detail</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="box">
+										<div class="image-area">
+											<div class="image" style="background-image: url('assets/img/dummy-img-thumb-list.png')"></div>
+										</div>
+										<div class="thumbnail-area">
+											<div class="wrapper-thumb">
+												<ul class="flat rate">
+													<li>
+														<span class="star fa fa-star"></span>
+														<span class="star-info">
+															<strong>7.5</strong>/10
+														</span>
+													</li>
+													<li>
+														<span>
+															<strong>25 Ulasan</strong>
+														</span>
+													</li>
+												</ul>
+
+												<div class="name">
+													<h5>Name Warehouse</h5>
+												</div>
+												<div class="price">
+													<h6>
+														<small>Start from</small>
+														<strong>Rp. 123</strong>
+													</h6>
+												</div>
+												<div class="address">
+													<p>Jl. xxxx No.xxx, XXXX</p>
+												</div>
+												<ul class="nearest-location">
+													<li>25 Km from Nearest City</li>
+												</ul>
+												<ul class="compare-button flat row">
+													<li class="form-area pull-left">
+														<div class="form-group row">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Compare
+																</label>
+															</div>
+														</div>
+													</li>
+													<li class="pull-right">
+														<a href="#" class="button">Detail</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="box">
+										<div class="image-area">
+											<div class="image" style="background-image: url('assets/img/dummy-img-thumb-list.png')"></div>
+										</div>
+										<div class="thumbnail-area">
+											<div class="wrapper-thumb">
+												<ul class="flat rate">
+													<li>
+														<span class="star fa fa-star"></span>
+														<span class="star-info">
+															<strong>7.5</strong>/10
+														</span>
+													</li>
+													<li>
+														<span>
+															<strong>25 Ulasan</strong>
+														</span>
+													</li>
+												</ul>
+
+												<div class="name">
+													<h5>Name Warehouse</h5>
+												</div>
+												<div class="price">
+													<h6>
+														<small>Start from</small>
+														<strong>Rp. 123</strong>
+													</h6>
+												</div>
+												<div class="address">
+													<p>Jl. xxxx No.xxx, XXXX</p>
+												</div>
+												<ul class="nearest-location">
+													<li>25 Km from Nearest City</li>
+												</ul>
+												<ul class="compare-button flat row">
+													<li class="form-area pull-left">
+														<div class="form-group row">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Compare
+																</label>
+															</div>
+														</div>
+													</li>
+													<li class="pull-right">
+														<a href="#" class="button">Detail</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="paging-area flat">
+								<li class="arrow prev">
+									<a href="#">
+										<i class="fa fa-angle-left"></i>
+									</a>
+								</li>
+								<li>
+									<a class="active" href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li class="arrow next">
+									<a href="#">
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+@@include('../Shared/footer.html')
