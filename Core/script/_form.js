@@ -100,4 +100,19 @@
 	    },
 	});
 
+	// PRODUCT MIX
+	$('.product-mix .checkbox .jcf-checkbox input').filter(':checked').each(function(index) {
+		$(this).parent().parent().find('strong').text('Added');
+	    $(this).parent().parent().parent().addClass("checked");
+	});
+	$('.product-mix .checkbox .jcf-checkbox input:checkbox').change(function(){
+	    if($(this).is(":checked")) {
+	    	$(this).parent().parent().find('strong').text('Added');
+	        $(this).parent().parent().parent().addClass("checked");
+	    } else {
+	    	$(this).parent().parent().find('strong').text('Add This');
+	        $(this).parent().parent().parent().removeClass("checked");
+	    }
+	});
+
 })(jQuery);
