@@ -1,6 +1,6 @@
 (function($){
 
-	$('.hero-banner').slick({
+	$('.hero-banner .slider-area').slick({
 		dots: true,
 		arrows: false,
 		autoplay: false,

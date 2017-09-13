@@ -1,10 +1,5 @@
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: initial;
-	z-index: 3;
+	position: relative;
 	background-color: $white;
 	border-top: 1px solid $text;
 	border-bottom: 1px solid $text;
@@ -120,6 +115,7 @@ header {
 		opacity: 0;
 		visibility: hidden;
 		pointer-events: none;
+		z-index: 1;
 		transition: all 0.3s linear;
 
 		&.showing {

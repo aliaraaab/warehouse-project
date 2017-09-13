@@ -2,6 +2,16 @@
 	padding: 0;
 	position: relative;
 
+	.table-location {
+		.container {
+			position: absolute;
+			top: initial;
+			bottom: 65px;
+			left: 0;
+			right: 0;
+		}
+	}
+
 	.scroll-down {
 		position: absolute;
 		top: initial;
@@ -43,11 +53,19 @@
 
 	.slider-banner {
 		position: relative;
-		// height: 0;
-		// padding: 0 0 9.38%;
+		height: 0;
+		padding: 0 0 13%;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+
+		@include breakpoint(desktop) {
+			padding: 0 0 11.25%;
+		}
+
+		@include breakpoint(laptop) {
+			padding: 0 0 9.8%;
+		}
 
 		.container {
 			// position: absolute;

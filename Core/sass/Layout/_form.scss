@@ -80,6 +80,7 @@
 
 		.datepicker {
 			cursor: pointer;
+			padding-right: 36px;
 		}
 
 		.icon-down {
@@ -89,6 +90,17 @@
 			left: initial;
 			right: 16px;
 			font-size: 1.6em;
+			pointer-events: none;
+			transform: translate(0,-50%);
+		}
+
+		.icon-calendar {
+			position: absolute;
+			top: 50%;
+			bottom: initial;
+			left: initial;
+			right: 16px;
+			font-size: 1.2em;
 			pointer-events: none;
 			transform: translate(0,-50%);
 		}
@@ -103,10 +115,6 @@
 
 		.input-text {
 			position: relative;
-
-			.form-control {
-				padding: 10px 38px 9px 16px;
-			}
 		}
 
 		.help-block {

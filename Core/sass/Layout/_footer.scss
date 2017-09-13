@@ -1,5 +1,5 @@
 footer {
-    padding: 70px 0 0;
+	padding: 70px 0 0;
 
 	.wrapper {
 		border-top: 1px solid $border-soft-gray;
@@ -12,12 +12,23 @@ footer {
 	.live-chat {
 		position: absolute;
 		top: initial;
-		bottom: 100%;
+		bottom: 107%;
 		left: initial;
 		right: 0;
-		font-size: 1em;
-		padding: 16px 20px 14px;
-		border-radius: 10px;
+		z-index: 1;
+
+		&.floating {
+			position: fixed;
+			bottom: 20px;
+			left: 0;
+		}
+
+		.button {
+			font-size: 1em;
+			padding: 16px 20px 14px;
+			border-radius: 10px;
+			float: right;
+		}
 
 		i {
 			margin: 0 0 0 10px;
