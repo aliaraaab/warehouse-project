@@ -20,7 +20,7 @@
         $(this).datepicker('clearDates');
 	});
 
-	$(".form-signup").validate({
+	$(".form-signup .form-area").validate({
 		rules: {
 	        name: {
 	            required: true
@@ -35,6 +35,13 @@
 	            required: true
 	        },
 		},
+
+		messages: {
+	        name: "",
+	        email: "",
+	        password: "",
+	        confirmPass: "",
+	    },
 
 		highlight: function(element) {
 		    $(element).closest('.form-group').addClass('has-error');
