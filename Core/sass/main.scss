@@ -19,6 +19,9 @@
     'Components/datepicker',
     'Components/custom-jcf',
     'Components/custom-slick',
+    'Components/custom-tabs',
+    'Components/custom-accordions',
+    'Components/custom-list-group',
     'Components/burger-menu',
     'Components/hero-banner',
     'Components/cards',
@@ -26,6 +29,7 @@
     'Components/modal',
     'Components/custom-range-slider',
     'Components/table-location',
+    'Components/search-block',
     'Components/tag';
 
 /* LAYOUT */
@@ -39,4 +43,6 @@
 @import
     'pages/homepage',
     'pages/catalog-page',
+    'pages/howitworks',
+    'pages/faq',
     'pages/signup';

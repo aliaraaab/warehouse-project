@@ -68,6 +68,7 @@
 			font-family: 'poppins-light';
 			font-size: 1.2em;
 			color: $text;
+		    font-weight: normal;
 		    // color: $text-darkgray;
 		}
 
@@ -118,20 +119,38 @@
 		}
 
 		.help-block {
+			font-family: 'poppins-medium';
 			color: $red;
 			margin: 0;
 			font-weight: normal;
 			position: absolute;
-			top: 50%;
-			right: 20px;
+			top: -22px;
+			right: 0;
 			bottom: initial;
 			left: initial;
-			font-size: 1em;
+			font-size: 0.9em;
 			letter-spacing: 0.5pt;
-    		transform: translate(0,-50%);
+			pointer-events: none;
+
+    		&:before {
+    			font-family: 'FontAwesome';
+    			margin: 0 3px 0 0;
+    		}
 		}
 
 		&.has-error {
+			label {
+				color: $red;
+			}
+
+			.jcf-checkbox {
+				border-color: $red;
+			}
+
+			#agree-error {
+				font-size: 0;
+			}
+
 			.form-control {
 				border-color: $red;
 				padding-right: 40px;

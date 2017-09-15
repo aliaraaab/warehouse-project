@@ -436,42 +436,42 @@
 	}
 
 	.detail-tabs {
-		.nav-tabs {
-			text-align: center;
-			border-bottom: solid 2px $border-gray;
-			margin-bottom: 40px;
-			> li {
-				float: none;
-				display: inline-block;
-				margin-bottom: 0;
-				font-size: 1.4em;
-				> a {
-					border: none;
-					border-radius: 0;
-					position: relative;
-					&:hover {
-						background-color: transparent;
-						color: $black;
-					}
-				}
-				&.active {
-					> a {
-						color: $black;
-						font-family: 'poppins-bold';
-						&:after {
-							content: '';
-							width: 100%;
-							height: 6px;
-							border-radius: 3px;
-							position: absolute;
-							left: 0;
-							bottom: -4px;
-							background-color: $black;
-						}
-					}
-				}
-			}
-		}
+		// .nav-tabs {
+		// 	text-align: center;
+		// 	border-bottom: solid 2px $border-gray;
+		// 	margin-bottom: 40px;
+		// 	> li {
+		// 		float: none;
+		// 		display: inline-block;
+		// 		margin-bottom: 0;
+		// 		font-size: 1.4em;
+		// 		> a {
+		// 			border: none;
+		// 			border-radius: 0;
+		// 			position: relative;
+		// 			&:hover {
+		// 				background-color: transparent;
+		// 				color: $black;
+		// 			}
+		// 		}
+		// 		&.active {
+		// 			> a {
+		// 				color: $black;
+		// 				font-family: 'poppins-bold';
+		// 				&:after {
+		// 					content: '';
+		// 					width: 100%;
+		// 					height: 6px;
+		// 					border-radius: 3px;
+		// 					position: absolute;
+		// 					left: 0;
+		// 					bottom: -4px;
+		// 					background-color: $black;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
 
 		.tab-content {
 			.tab-pane {

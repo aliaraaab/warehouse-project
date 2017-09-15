@@ -20,6 +20,41 @@
         $(this).datepicker('clearDates');
 	});
 
+	$(".form-login").validate({
+		rules: {
+	        email: {
+	            required: true
+	        },
+	        password: {
+	            required: true
+	        },
+		},
+
+		// messages: {
+		// 	name: "",
+		// 	email: "",
+		// 	password: "",
+		// 	confirmPass: "",
+		// },
+
+		highlight: function(element) {
+		    $(element).closest('.form-group').addClass('has-error');
+		},
+		unhighlight: function(element) {
+		    $(element).closest('.form-group').removeClass('has-error');
+		},
+		errorElement: 'strong',
+		errorClass: 'help-block fa fa-exclamation-triangle',
+		errorPlacement: function(error, element) {
+		    if(element.parent('.form-group').length) {
+		        error.insertBefore(element);
+		    }
+		    else {
+		        error.insertBefore(element);
+		    }
+		},
+	});
+
 	$(".form-signup .form-area").validate({
 		rules: {
 	        name: {
@@ -34,14 +69,17 @@
 	        confirmPass: {
 	            required: true
 	        },
+	        agree: {
+	            required: true
+	        },
 		},
 
-		messages: {
-	        name: "",
-	        email: "",
-	        password: "",
-	        confirmPass: "",
-	    },
+		// messages: {
+		// 	name: "",
+		// 	email: "",
+		// 	password: "",
+		// 	confirmPass: "",
+		// },
 
 		highlight: function(element) {
 		    $(element).closest('.form-group').addClass('has-error');

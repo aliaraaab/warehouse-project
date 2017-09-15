@@ -1,0 +1,22 @@
+.list-group {
+	margin: 0 0 30px;
+
+	.list-group-item {
+		border-radius: 10px;
+		margin: 0 0 10px;
+		font-size: 1.2em;
+		color: $text;
+		border-color: $border-gray;
+
+		&:first-child {
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+		}
+
+		&:last-child {
+			margin: 0;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+	}
+}

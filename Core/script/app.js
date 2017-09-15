@@ -15,8 +15,10 @@
     });
 
     //TABS MAP
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-	  	google.maps.event.trigger(map, 'resize');
-	});
+	if ($('.detail-warehouse .detail-tabs').length > 0) {
+		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+			google.maps.event.trigger(map, 'resize');
+		});
+	}
 
 })(jQuery);

@@ -89,6 +89,10 @@ iframe {
 section {
 	padding: 25px 0;
 
+	&.search-block {
+		padding: 0;
+	}
+
 	&.hero-banner {
 		margin: 0 0 25px;
 	}

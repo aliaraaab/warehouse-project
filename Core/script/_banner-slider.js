@@ -9,7 +9,8 @@
 		autoplaySpeed: 5000,
 		infinite: true,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		adaptiveHeight: true,
 	});
 
 	// DETAIL WAREHOUSE

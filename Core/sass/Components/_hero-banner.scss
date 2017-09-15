@@ -2,6 +2,18 @@
 	padding: 0;
 	position: relative;
 
+	.slider-area {
+		visibility: hidden;
+		opacity: 0;
+
+		&.slick-initialized {
+			margin: 0;
+			visibility: visible;
+			opacity: 1;
+			transition: opacity 0.3s ease-in;
+		}
+	}
+
 	.table-location {
 		.container {
 			position: absolute;
@@ -89,7 +101,7 @@
 		.desc-info {
 			h3 {
 				margin: 0;
-				line-height: 140%;
+				line-height: 130%;
 				margin: 0 0 10px;
 				color: $dark-black;
 				font-size: 3em;
